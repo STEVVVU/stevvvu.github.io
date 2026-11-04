@@ -9,11 +9,11 @@ const node = (tag, text, className) => {
 
 document.title = profile.name;
 document.querySelector('meta[name="description"]').content = profile.description;
-function renderRows(list, records) {
+function renderRows(list, records, titleTag = 'h3') {
   for (const record of records) {
     const row = node('li', undefined, 'work-row');
     const body = node('div', undefined, 'row-body');
-    const title = node('h3');
+    const title = node(titleTag);
     if (record.url) {
       const destination = new URL(record.url);
       const anchor = node('a', record.title);
@@ -34,7 +34,18 @@ function renderRows(list, records) {
   }
 }
 renderRows(document.querySelector('#experience-list'), collections.experience);
-renderRows(document.querySelector('#project-list'), collections.projects);
+const projectList = document.querySelector('#project-list');
+for (const group of collections.projectGroups) {
+  const section = node('section', undefined, 'project-group');
+  section.id = group.id;
+  const heading = node('h3', group.title, 'project-category');
+  heading.id = group.id + '-title';
+  section.setAttribute('aria-labelledby', heading.id);
+  const list = node('ol', undefined, 'work-list');
+  renderRows(list, group.projects, 'h4');
+  section.append(heading, list);
+  projectList.append(section);
+}
 
 const navigation = [...document.querySelectorAll('nav a')];
 const sections = navigation.map(anchor => document.querySelector(anchor.hash));
