@@ -10,14 +10,23 @@ export const collections = {
       label: 'Jun – Sep 2026',
       description: 'Built a self-service platform for running research workflows on Spark and EMR.',
       url: 'https://www.amazon.com/',
-      technologies: ['React', 'Cloudscape', 'Apache Spark', 'Amazon EMR', 'AWS Step Functions', 'Amazon Bedrock AgentCore']
+      technologies: [
+        'React', 'Cloudscape', 'Apache Spark', 'YAML',
+        'Amazon EMR', 'AWS Step Functions', 'Amazon CloudWatch',
+        'Amazon Bedrock AgentCore', 'AWS IAM'
+      ]
     },
     {
       title: 'Software Development Engineer Intern · Amazon',
       label: 'Jun – Sep 2025',
       description: 'Built Spark pipelines and Redis-backed Java checks to limit repeated Autocomplete impressions.',
       url: 'https://www.amazon.com/',
-      technologies: ['Java', 'Redis', 'Apache Spark', 'Amazon EMR', 'AWS Step Functions', 'AWS AppConfig']
+      technologies: [
+        'Java', 'Redis', 'Apache Spark',
+        'Amazon S3', 'Amazon EMR', 'Amazon ElastiCache',
+        'AWS Step Functions', 'Amazon EventBridge', 'AWS AppConfig',
+        'AWS CDK', 'AWS CloudFormation', 'AWS IAM', 'Amazon VPC'
+      ]
     },
     {
       title: 'Game Developer · Roblox',
