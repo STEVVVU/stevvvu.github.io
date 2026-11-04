@@ -8,22 +8,22 @@ export const collections = {
     {
       title: 'Software Development Engineer Intern · Amazon',
       label: 'Jun – Sep 2026',
-      description: 'Automated Spark research jobs with AWS Step Functions and EMR, replacing manual scripts.',
+      description: 'Built a self-service platform for running research workflows on Spark and EMR.',
       url: 'https://www.amazon.com/',
-      technologies: ['AWS Step Functions', 'EMR', 'Spark', 'Bedrock AgentCore', 'React', 'Cloudscape']
+      technologies: ['React', 'Cloudscape', 'Apache Spark', 'Amazon EMR', 'AWS Step Functions', 'Amazon Bedrock AgentCore']
     },
     {
       title: 'Software Development Engineer Intern · Amazon',
       label: 'Jun – Sep 2025',
-      description: 'Built Java rules to cap Autocomplete impressions using Redis counts.',
+      description: 'Built Spark pipelines and Redis-backed Java checks to limit repeated Autocomplete impressions.',
       url: 'https://www.amazon.com/',
-      technologies: ['Java', 'Redis', 'Apache Spark', 'AWS AppConfig']
+      technologies: ['Java', 'Redis', 'Apache Spark', 'Amazon EMR', 'AWS Step Functions', 'AWS AppConfig']
     },
     {
-      title: 'Independent Game Developer · Roblox experiences',
+      title: 'Game Developer · Roblox',
       label: 'Feb 2022 – Present',
       description: 'Built gameplay and monetization systems for Roblox experiences supporting 700K concurrent players.',
-      technologies: ['Luau', 'Real-time networking', 'MemoryStore', 'Server-authoritative gameplay']
+      technologies: ['Luau', 'MemoryStore']
     }
   ],
   projects: [
@@ -37,7 +37,7 @@ export const collections = {
       title: 'M:N Fiber Task Runtime', label: 'Concurrency',
       description: 'An extension of Marl’s C++ fiber scheduler with worker-local hints and work stealing.',
       url: 'https://github.com/STEVVVU/mn-thread-runtime',
-      technologies: ['C++', 'Marl', 'Multithreading']
+      technologies: ['C++', 'Marl']
     },
     {
       title: 'LLM Serving Engine', label: 'ML infrastructure',
